@@ -39,5 +39,15 @@ namespace LearningDesignPatterns.Observer_Pattern
             return randomTemperature.Next(-50, 50);
         }
 
+        public static void Run()
+        {
+            var observer = new Observer();
+            var observer2 = new Observer();
+            var observable = new Observable();
+            observable.Add(observer);
+            observable.Add(observer2);
+            observable.Notify();
+        }
+
     }
 }

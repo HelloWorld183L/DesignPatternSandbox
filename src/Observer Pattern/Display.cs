@@ -10,12 +10,7 @@ namespace LearningDesignPatterns.Observer_Pattern
     {
         static void Main(string[] args)
         {
-            var observer = new Observer();
-            var observer2 = new Observer();
-            var observable = new Observable();
-            observable.Add(observer);
-            observable.Add(observer2);
-            observable.Notify();
+            Observable.Run();
         }
     }
 }
