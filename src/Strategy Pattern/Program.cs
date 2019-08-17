@@ -10,8 +10,7 @@ namespace LearningDesignPatterns
     {
         /*static void Main(string[] args)
         {
-            var sword = new Sword();
-            var warrior = new Warrior(sword);
+            Warrior.Run();
         }
         */
         

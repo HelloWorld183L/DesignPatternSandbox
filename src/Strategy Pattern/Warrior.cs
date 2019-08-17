@@ -15,5 +15,11 @@ namespace LearningDesignPatterns
             _weapon = weapon;
             _weapon.Attack();
         }
+
+        public static void Run()
+        {
+            var sword = new Sword();
+            var warrior = new Warrior(sword);
+        }
     }
 }
