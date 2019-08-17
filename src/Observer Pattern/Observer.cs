@@ -10,9 +10,14 @@ namespace LearningDesignPatterns.Observer_Pattern
     {
         public Observable Observable { get; set; }
 
+        public Observer()
+        {
+            Observable = new Observable();
+        }
+
         public void Update()
         {
-            Console.WriteLine($"The temperature today is... {Observable.Temperature}");
+            Console.WriteLine($"The temperature today is... {Observable.GetTemperature()}");
         }
 
     }

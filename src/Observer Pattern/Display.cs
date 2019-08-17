@@ -16,7 +16,6 @@ namespace LearningDesignPatterns.Observer_Pattern
             observable.Add(observer);
             observable.Add(observer2);
             observable.Notify();
-
         }
     }
 }

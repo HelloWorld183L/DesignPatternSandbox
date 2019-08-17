@@ -8,8 +8,12 @@ namespace LearningDesignPatterns.Observer_Pattern
 {
     class Observable : IObservable
     {
-        public int Temperature { get; }
         public List<IObserver> Observers { get; set; }
+
+        public Observable()
+        {
+            Observers = new List<IObserver>();
+        }
 
         public void Notify()
         {
@@ -27,6 +31,12 @@ namespace LearningDesignPatterns.Observer_Pattern
         public void Remove(IObserver observer)
         {
             Observers.Remove(observer);
+        }
+
+        public int GetTemperature()
+        {
+            Random randomTemperature = new Random();
+            return randomTemperature.Next(-50, 50);
         }
 
     }
